@@ -1,0 +1,260 @@
+@charset "UTF-8";
+@font-face {
+    font-family: xtudiefont;
+    src: url(../assets/Nexa-Font/Nexa\ Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: xtudiefont;
+    src: url(../assets/Nexa-Font/Nexa\ Light.otf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: xtudiefont;
+    src: url(../assets/Nexa-Font/Nexa\ Regular.otf);
+    font-weight: regular;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    position: relative !important;
+    box-sizing: border-box;
+}
+body {
+    font-family: "xtudiefont", sans-serif;
+    color: #473E64;
+    background-color: #F9F7FF;
+}
+header {
+    padding: .5rem 6%;
+    font-size: 18px;
+    background-color: #fcfbfd;
+}
+.navs {
+    padding: 4px;
+}
+.navs ul {
+    list-style: none;
+    font-size: 16px;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navs ul li { 
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+.navbar-nav ul li a{
+    text-decoration: none;
+    color: #473E64;
+    transition: 0.5;
+    font-weight: 600;
+}
+.nav-links a::after{
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 0;
+    background-color:#6255A5;
+    transition: .5s;
+}
+.nav-links a:hover::after {
+    width: 60%;
+}
+.sign-up button {
+    padding: .6rem 1rem;
+    font-size: 16px;
+    color: #000;
+}
+.logo img {
+    width: 130px;
+}
+#sign-in {
+    border: none;
+    background-color: transparent;
+}
+.navbar-brand {
+    flex: 1;
+}
+#above-fold {
+    display: flex;
+    padding: 0 6%;
+    height: 90vh;
+}
+.intro {
+    padding: 8% 0;
+    width: 50%;
+}
+.intro p{
+    font-size: 16px;
+}
+.intro h1 {
+    font-size: 48px;
+    font-weight: 600;
+    padding: .3rem 0;
+}
+#search-books {
+    padding: 1.5rem 0;
+    display: flex;
+    margin: 0;
+    gap: 0;
+    flex-wrap: wrap;
+}
+#label{
+    width: 100%;
+}
+#book{
+    color: #79BF91;
+}
+#search-books input, #search-books button{
+    padding: .5rem 1.2rem;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 16px;
+    border: #6255A5 2px solid;
+}
+#search-books input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+    transition: .5s;
+}
+#search-books button{
+    background-color: #6255A5;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/* About */
+#about{
+    background-color: #fff;
+    padding: 0 6%;
+}
+#aboutUsTitle {
+    font-weight: 60 0;
+    text-align: center;
+}
+#features {
+    display: flex;
+    justify-content: space-around;
+}
+.cards{
+    transition: transform .5s;
+    cursor: pointer;
+}
+.cards:hover{
+    transform: translateY( 10px) scale(1.05);
+}
+/*Materials*/
+#materials{
+    padding: 0 6%; 
+}
+#pMaterials {
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+}
+.materials-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.materials-list .material {
+    width: 32%;
+    border: 1px rgb(207, 202, 202) solid;
+    background-color: #fcfbfd;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+.materials-list .material .active {
+    background-color: #6255A5;
+    color: #fff;
+}
+.materials-list .material #material-name {
+    font-weight: 600;
+    font-size: 24px;
+    color: #554D70;
+}
+.materials-list .material #price {
+    color: #79BF91;
+    font-weight: 600;
+    font-size: 18px;
+}
+.materials-list .material button {
+    border: 2px #6255A5 solid;
+    padding: .5rem 1.1rem;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: .7rem;
+    color: #6255A5;
+    transition: .3s;
+}
+.materials-list .material button:hover{
+    background-color: #79BF91;
+    color: #F9F7FF;
+    border-color: #79BF91;
+}
+.materials-foot {
+    display: flex;
+}
+.material-info {
+    display: flex;
+    gap: 12px;
+}
+.material-container .materials-foot a {
+    text-decoration: none;
+    color: #fff;
+    padding: .8rem 1.2rem;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 16px;
+    background-color: #79BF91;
+    transition: .5s;
+}
+.material-container .materials-foot a:hover{
+    background-color: #1b793c;
+    color: #fcfbfd;
+}
+#menu {
+    display: none;
+}
+.login {
+    display: none;
+}
+/* Mobile screens */
+@media (max-width: 768px){
+    header {
+        padding: .5rem 3%;
+    }
+    .intro {
+        width: 100%;
+    }
+    .intro h1{
+        font-size: 36px;
+    }
+    .materials-list .material {
+        width: 48%;
+        padding: 2%;
+    }
+    .materials-list .material #material-name{
+        font-size: 18px;
+    }
+    #menu{
+        display: block;
+    }
+    .materials-list .material button{
+          padding: .3rem .8rem;
+          font-size: 14px;
+    }
+    
+}
