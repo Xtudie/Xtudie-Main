@@ -12,3 +12,5 @@ Personalization: create a personalized reading list and save your favorite texts
 Our text analysis tools will be available to you as you read. And if you have any questions or need assistance, please feel free to reach out to our customer support team.
 
 We hope you enjoy using our app and that it helps you to gain a deeper understanding of your courses!
+
+Live preview at  https://xtudie.github.io/Xtudie-Main/
