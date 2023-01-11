@@ -1,4 +1,4 @@
-# Xtudie-Main
+# Xtudie
 Welcome to the e-Library web app!
 
 Our app provides a convenient way for users to access a wide range of School materials, Literature texts and as well as tools for analyzing and understanding them.
