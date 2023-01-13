@@ -125,11 +125,14 @@ header {
     outline: none;
     transition: .5s;
 }
-#search-books button{
+#login-btn, #search-books button{
     background-color: #6255A5;
     color: #fff;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+#login-btn {
+    border-radius: 10px;
 }
 /* About */
 #about{
@@ -230,6 +233,15 @@ header {
 }
 .login {
     display: none;
+}
+btn:focus, a:focus
+{
+         outline: none;
+}
+.navbar-toggler:focus
+{
+         outline: none !important;
+         box-shadow: none;
 }
 /* Mobile screens */
 @media (max-width: 768px){
