@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Style -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Xtudie</title>
 </head>
@@ -14,8 +23,8 @@
 
     <!-- navbar -->
     <header>
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid align-center">
                 <a href="#." class="navbar-brand">
                   <img src="./assets/Xtudie Logo/xtudie_logo.png" alt="xtudie logo" width="120px">
                 </a>
@@ -24,26 +33,26 @@
                 </li>
                 <!-- toogle button for mobile nav -->
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon nav-btn" style="outline: none;"></span>
+                    <i class="bi bi-list" style="font-size: 26px; color: black; font-weight: 600;"></i>
                 </button>
     
                 <!-- navbar links -->
-                <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse justify-content-end " id="main-nav">
+                    <ul class="navbar-nav align-center">
                         <li class="nav-item nav-links ms-2">
-                            <a href="#" class="navs nav-link px-3">Home</a>
+                            <a href="#" class="navs nav-link px-3">Materials</a>
                         </li>
                         <li class="nav-item nav-links ms-2">
                             <a href="#features" class="navs nav-link px-3">Categories</a>
                         </li>
                         <li class=" nav-item nav-links ms-2">
-                            <a href="#." class="navs nav-link px-3">Practice</a>
+                            <a href="#." class="navs nav-link px-3">Analysis</a>
                         </li>
                         <li class=" nav-item nav-links ms-2">
                             <a href="./image.html" class="navs nav-link px-3">Blog</a>
                         </li>
                         <li class="nav-item ms-2 d-none d-md-inline">
-                            <a class="btn" id="login-btn" data-bs-toggle="modal" href="#exampleModalToggle2" role="button" style="border: 1px #6255A5 solid;padding: .6rem 1rem; borderr-radius: 10px; font-size: 16px;">Login</a>
+                            <a class="btn" id="login-btn" data-bs-toggle="modal" href="#exampleModalToggle2" role="button" style="border: 1px #6255A5 solid;padding: .6rem 1rem; border-radius: 10px; font-size: 16px;">Login</a>
                         </li>
                         <li class="nav-item ms-2 d-none d-md-inline">
                           <a data-bs-toggle="modal" href="#exampleModalToggle" role="button" class="btn" style="border-radius: 10px;
@@ -63,13 +72,13 @@
     <section id="above-fold">
         <div class="intro">
             <!-- <p>Let's make the best investments</p> -->
-            <h1>Boost your <br><span id="book">Studies</span> with <br>resourceful contents.</h1>
-            <p>Connect, learn, grow, 🚀🚀</p>
+            <h1>Boost your <br><span id="book">Studies</span> with<br>resourceful contents.</h1>
+            <p>Connect, learn, grow 🚀🚀</p>
             <div id="search-books">
                 <input type="search" name="search books" id="search-book" placeholder="Find your books here">
                 <button type="submit">Search Book</button>
-                <div id="label"><label for="search">Looking for Course materials?</label></div>
             </div>
+            
         </div>
         <div class="illustrations">
 
@@ -78,8 +87,8 @@
 
     <!-- About -->
     <section id="about" class="py-3">
-        <h2 id="aboutUsTitle" class="py-5">Why use <span id="inXtudie">Xtudie</span>?</h2>
-        <p class="text-center fw-bold">Xtudie is an African educational E-libary with the goal of providing ease studing for students. <br>An educational hub with </p>
+        <h2 id="aboutUsTitle" class="py-5 fw-bold">Why use <span id="inXtudie">Xtudie</span>?</h2>
+        <p class="text-center fw-bold mb-5">Xtudie is an African educational E-libary with the goal of providing ease studing for students. <br>An educational hub charged with the goal of making studying a piece of cake walk.</p>
 
         <div class="container">
                   
@@ -212,7 +221,17 @@
             </div>
         </div>
     </section>
+    <section id="courseCategories">
+        <div id="title">
+            <h1 id="head" class="fw-bold my-5 text-center">Explore Courses Categories</h1>
+            <p>Xtudie is </p>
+        </div>
+        <div class="categories">
+            <div class="item"></div>
+        </div>
+    </section>
 
+    <!-- navbar script -->
     <script src="./js/sandBox.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./node_modules/aos/dist/aos.js"></script>

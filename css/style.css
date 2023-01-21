@@ -12,7 +12,7 @@
 @font-face {
     font-family: xtudiefont;
     src: url(../assets/Nexa-Font/Nexa\ Regular.otf);
-    font-weight: regular;
+    font-weight: normal;
 }
 
 *{
@@ -85,7 +85,7 @@ header {
 #above-fold {
     display: flex;
     padding: 0 6%;
-    height: 90vh;
+    height: 100vh;
 }
 .intro {
     padding: 8% 0;
@@ -104,7 +104,7 @@ header {
     display: flex;
     margin: 0;
     gap: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 #label{
     width: 100%;
@@ -152,7 +152,7 @@ header {
     cursor: pointer;
 }
 .cards:hover{
-    transform: translateY( 10px) scale(1.05);
+    transform: translateY( -10px);
 }
 /*Materials*/
 #materials{
@@ -242,11 +242,21 @@ btn:focus, a:focus
 {
          outline: none !important;
          box-shadow: none;
+}.navbar-nav{
+    display: flex;
+    align-items: center;
+}
+/* course categories */
+#courseCategories{
+    padding: 0 6%;
 }
 /* Mobile screens */
 @media (max-width: 768px){
     header {
         padding: .5rem 3%;
+    }
+    #above-fold{
+        height: 90vh;
     }
     .intro {
         width: 100%;
@@ -268,5 +278,12 @@ btn:focus, a:focus
           padding: .3rem .8rem;
           font-size: 14px;
     }
-    
+    #search-books input, #search-books button{
+        padding: .5rem .5rem;
+    }
+    .nav-links a:hover::after{
+        width: 0;
+    }.navbar-nav{
+        display: block;
+    } 
 }
