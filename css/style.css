@@ -27,7 +27,7 @@ body {
     background-color: #F9F7FF;
 }
 header {
-    padding: .5rem 6%;
+    padding: .5rem 6% !important;
     font-size: 18px;
     background-color: #fcfbfd;
 }
@@ -154,11 +154,15 @@ header {
 .cards:hover{
     transform: translateY( -10px);
 }
+.card-icons {
+    font-size: 44px;
+    color: #1b793c;
+}
 /*Materials*/
 #materials{
     padding: 0 6%; 
 }
-#pMaterials {
+#pMaterials{
     font-weight: 600;
     text-align: center;
     margin: auto;
@@ -168,7 +172,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.materials-list .material {
+.materials-list .material{
     width: 32%;
     border: 1px rgb(207, 202, 202) solid;
     background-color: #fcfbfd;
@@ -176,41 +180,15 @@ header {
     padding: 1%;
     margin-bottom: .5rem;
     margin-top: .5rem;
-}
-.materials-list .material .active {
-    background-color: #6255A5;
-    color: #fff;
-}
-.materials-list .material #material-name {
-    font-weight: 600;
-    font-size: 24px;
-    color: #554D70;
-}
-.materials-list .material #price {
-    color: #79BF91;
-    font-weight: 600;
-    font-size: 18px;
-}
-.materials-list .material button {
-    border: 2px #6255A5 solid;
-    padding: .5rem 1.1rem;
-    background-color: transparent;
-    outline: none;
-    font-size: 16px;
-    border-radius: 10px;
-    margin-top: .7rem;
-    color: #6255A5;
-    transition: .3s;
-}
-.materials-list .material button:hover{
-    background-color: #79BF91;
-    color: #F9F7FF;
-    border-color: #79BF91;
-}
-.materials-foot {
+    transition: .5s;}.materials-list .material #price {
+        color: #79BF91;
+        font-weight: 600;
+        font-size: 20px;
+    }
+.materials-foot{
     display: flex;
 }
-.material-info {
+.material-info{
     display: flex;
     gap: 12px;
 }
@@ -224,10 +202,40 @@ header {
     background-color: #79BF91;
     transition: .5s;
 }
+.materials-list hr{
+    background-color: rgb(207, 202, 202) ;
+}
 .material-container .materials-foot a:hover{
-    background-color: #1b793c;
+    background-color: #56d884;
     color: #fcfbfd;
 }
+.materials-list .material:hover {
+    background-color: #6255A5;
+    color: #fcfbfd;
+}.materials-list .material:hover ~ .materials-list .material:nth-child(2){
+    color: #fcfbfd !important;
+}.materials-list .material:hover ~ .materials-list .material button{
+    background-color: #79BF91;
+    color: #F9F7FF !important;
+    border-color: #79BF91;
+}.materials-list .material:hover hr{
+    background-color: #fcfbfd;
+}
+.materials-list .material #material-name {
+    font-weight: 600;
+    font-size: 24px;
+}
+.materials-list .material button{
+    border: 2px #6255A5 solid;
+    padding: .5rem 1.1rem;
+    background-color: #fcfbfd;
+    outline: none;
+    color: #6255A5;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: .7rem;
+    transition: .3s;}.materials-list .material button:hover {
+        transform: scale(1.03);}
 #menu {
     display: none;
 }
@@ -255,6 +263,13 @@ btn:focus, a:focus
     header {
         padding: .5rem 3%;
     }
+    .navbar-brand{
+        margin: auto;
+        flex: 0;
+        width: 110px !important;
+    }.navbar-toggler{
+        padding: 0;
+    }
     #above-fold{
         height: 90vh;
     }
@@ -281,7 +296,12 @@ btn:focus, a:focus
     #search-books input, #search-books button{
         padding: .5rem .5rem;
     }
-    .nav-links a:hover::after{
+    .nav-links{
+        margin: 0 !important;
+        padding-left: 0;
+    }.nav-link{
+        padding-left: 0 !important;
+    }.nav-links a:hover::after{
         width: 0;
     }.navbar-nav{
         display: block;

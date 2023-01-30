@@ -8,38 +8,36 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
 
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-
     <!-- bootstrap -->
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <!-- Style -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
     <title>Xtudie</title>
 </head>
 <body>
 
     <!-- navbar -->
     <header>
-        <nav class="navbar navbar-expand-md sticky-top">
+        <nav class="navbar navbar-expand-md fixed-top">
             <div class="container-fluid align-center">
+                <!-- toogle button for mobile nav -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" style="color: black; padding: 0;"></i>
+                </button>
                 <a href="#." class="navbar-brand">
                   <img src="./assets/Xtudie Logo/xtudie_logo.png" alt="xtudie logo" width="120px">
                 </a>
-                <li class="nav-item d-inline d-md-none me-2 float-left shadow-none">
-                    <a  class="btn" data-bs-toggle="modal" href="#exampleModalToggle2" role="button" id="login-btn">Login</a>
+                <li class="nav-item d-inline d-md-none me float-left shadow-none">
+                    <a  class="btn" data-bs-toggle="modal" href="#exampleModalToggle2" role="button" id="login-btn">Sign Up</a>
                 </li>
-                <!-- toogle button for mobile nav -->
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list" style="font-size: 27px; color: black; font-weight: 600;"></i>
-                </button>
     
                 <!-- navbar links -->
                 <div class="collapse navbar-collapse justify-content-end " id="main-nav">
                     <ul class="navbar-nav align-center">
-                        <li class="nav-item nav-links ms-2">
+                        <li class="nav-item nav-links ms-2 ms-md-0">
                             <a href="#" class="navs nav-link px-3">Materials</a>
                         </li>
                         <li class="nav-item nav-links ms-2">
@@ -91,15 +89,13 @@
         <p class="text-center fw-bold mb-5">Xtudie is an African educational E-libary with the goal of providing ease studing for students. <br>An educational hub charged with the goal of making studying a piece of cake walk.</p>
 
         <div class="container">
-                  
-           
 
             <div class="row text-center m-auto my-5" id="features">
 
               <div class="col-lg-3 col-12 mb-3 cards">
                 <div class="card ">
                     <div class="card card-body px-4">
-                        <i class="fa fa-road mb-4 mt-lg-0" aria-hidden="true"></i>
+                        <i class="fa-regular fa-file card-icons" aria-hidden="true"></i>
                         <h5 class="fw-bold">Top-rated</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis enim quos quia, molestiae blanditiis quisquam sit earum dicta quod nostrum omnis pariatur ipsum maiores, consectetur provident error soluta quidem laborum?</p>
                       </div>
@@ -109,7 +105,7 @@
               <div class="col-lg-3 col-12 mb-3 cards">
                 <div class="card ">
                   <div class="card card-body px-4 b-none">
-                    <i class="fa fa-clock fa-spin mb-4 mt-lg-0" aria-hidden="true"></i>
+                    <i  class="card-icons fa fa-book"></i>
                     <h5 class="fw-bold">Up-to-date Notes</h5>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque facilis officiis soluta hic dolorum quas, tempora eligendi unde voluptas earum nemo sequi sed error excepturi pariatur? Quidem iste sapiente aut!</p>
                   </div>
@@ -119,7 +115,7 @@
               <div class="col-lg-3 col-12 mb-3 cards">
                 <div class="card ">
                   <div class="card card-body px-4">
-                    <i class="fa fa-heartbeat fa-beat mb-4 mt-lg-0" aria-hidden="true"></i>
+                    <i class="fa fa-heartbeat card-icons" aria-hidden="true"></i>
                     <h5 class="fw-bold">Easy Access</h5>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit provident placeat quod dolorum. Harum qui laborum cumque debitis temporibus? Laborum deleniti nam corrupti obcaecati corporis libero odio ullam eum quos!</p>
                   </div>
@@ -140,80 +136,81 @@
                 <div class="material">
                     <div class="icon"></div>
                     <div id="material-name">
-                        EGL 103 - Introduction to Spoken English
+                        material name
                     </div>
-                    <div id="price">Free</div>
+                    <div id="price" class="price">Free</div>
                     <hr>
                     <div class="material-info">
-                        <div id="number"><span id="materialNo">13</span> materials</div>
-                        <div id="reviews"><span id="reviewNo">10+</span> reviews</div>
+                        <div id="number"><span class="materialNo"></span> materials</div>
+                        <div id="reviews"><span class="reviewNo"></span> reviews</div>
                     </div>
-                    <button>View Now</button>
+                    <button class="view-btn">View Now</button>
                 </div>
                 <div class="material">
                     <div class="icon"></div>
                     <div id="material-name">
-                        LIT 101 - Introduction to Prose Fiction
+                        material name
                     </div>
-                    <div id="price">Free</div>
+                    <div id="price" class="price">Free</div>
                     <hr>
                     <div class="material-info">
-                        <div id="number"><span id="materialNo">13</span> materials</div>
-                        <div id="reviews"><span id="reviewNo">10+</span> reviews</div>
+                        <div id="number"><span class="materialNo"></span> materials</div>
+                        <div id="reviews"><span class="reviewNo"></span> reviews</div>
                     </div>
-                    <button>View Now</button>
+                    <button class="view-btn">View Now</button>
                 </div>  
                 <div class="material">
                     <div class="icon"></div>
                     <div id="material-name">
-                        MTH 101 - Elementary Mathematics
+                        material name
                     </div>
-                    <div id="price">Free</div>
+                    <div id="price" class="price">Free</div>
                     <hr>
                     <div class="material-info">
-                        <div id="number"><span id="materialNo">13</span> materials</div>
-                        <div id="reviews"><span id="reviewNo">0</span> reviews</div>
+                        <div id="number"><span class="materialNo"></span> materials</div>
+                        <div id="reviews"><span class="reviewNo"></span> reviews</div>
  
-                    </div>                   <button>View Now</button>
+                    </div>                   
+                    <button class="view-btn">View Now</button>
                 </div>
                 <div class="material">
                     <div class="icon"></div>
                     <div id="material-name">
-                        SSC 105 - Mathematics for social sciences
+                        material name
                     </div>
-                    <div id="price">Free</div>
+                    <div id="price" class="price">Free</div>
                     <hr>
                     <div class="material-info">
-                        <div id="number"><span id="materialNo">13</span> materials</div>
-                        <div id="reviews"><span id="reviewNo">20+</span> reviews</div>
+                        <div id="number"><span class="materialNo"></span> materials</div>
+                        <div id="reviews"><span class="reviewNo"></span> reviews</div>
                     </div>
-                    <button>View Now</button>
+                    <button class="view-btn">View Now</button>
                 </div>
                 <div class="material material-active">
                     <div class="icon"></div>
                     <div id="material-name">
-                        YOR 111 - Introduction to Yoruba language
+                        material name
                     </div>
-                    <div id="price">Free</div>
+                    <div id="price" class="price">Free</div>
                     <hr>
                     <div class="material-info">
-                        <div id="number"><span id="materialNo">13</span> materials</div>
-                        <div id="reviews"><span id="reviewNo">20+</span> reviews</div>
+                        <div id="number"><span class="materialNo"></span> materials</div>
+                        <div id="reviews"><span class="reviewNo"></span> reviews</div>
                     </div>
-                    <button>View Now</button>
+                    <button class="view-btn">View Now</button>
                 </div>
                 <div class="material">
                     <div class="icon"></div>
                     <div id="material-name">
-                        EDU 101 - Education and teaching Ethics
+                        material name
                     </div>
-                    <div id="price">Free</div>
+                    <div id="price" class="price">Free</div>
                     <hr>
                     <div class="material-info">
-                        <div id="number"><span id="materialNo">13</span> materials</div>
-                        <div id="reviews"><span id="reviewNo">20+</span> reviews</div>
+                        <div id="number"><span class="materialNo"></span> materials</div>
+                        <div id="reviews"><span class="reviewNo"></span> reviews</div>
                     </div>
-                    <button>View Now</button>
+                    <button class="view-btn">View Now</button>
                 </div>
             </div>
             <div class="materials-foot my-5">
@@ -221,6 +218,8 @@
             </div>
         </div>
     </section>
+
+    <!-- course categories -->
     <section id="courseCategories">
         <div id="title">
             <h1 id="head" class="fw-bold my-5 text-center">Explore Courses Categories</h1>
@@ -232,13 +231,16 @@
     </section>
 
     <!-- navbar script -->
+    <script src="./js/data.js"></script>
     <script src="./js/sandBox.js"></script>
+
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./node_modules/aos/dist/aos.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
 
 </body>
 </html>

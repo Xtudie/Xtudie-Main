@@ -1,14 +1,5 @@
-console.log('Hello F*cking World!');
-
 const materialCards = document.getElementsByClassName('material');
-
-
-for (let index = 0; index < materialCards.length; index++) {
-    const element = materialCards[index];
-    element.addEventListener('onclick', (e) => {
-        e.target
-    })
-}
+ 
 //initialise itiration
 i = 0;
 animateItem = () => {
@@ -25,8 +16,25 @@ animateItem = () => {
     setTimeout( () => {
         book.innerHTML = bookContents[i];
         animateItem()
-    }, 3000);
-    
+    }, 3000);   
 };
-
 animateItem();
+
+let viewBtns = document.querySelectorAll('.view-btn');
+let viewBtnsArry = [...viewBtns];
+let viewBtn = viewBtnsArry.forEach(btn => {
+    btn
+});
+materialArry.forEach(material => {
+    const priceBtn = material.lastElementChild;
+    material.addEventListener('mouseover', () => {
+        priceBtn.style.backgroundColor = '#79bf91';
+        priceBtn.style.color = '#f9f7ff';
+        priceBtn.style.borderColor = '#79bf91';
+    });
+    material.addEventListener('mouseout', () => {
+        priceBtn.style.backgroundColor = 'transparent';
+        priceBtn.style.color = '#6255a5';
+        priceBtn.style.borderColor = '#6255a5'
+    })
+});
