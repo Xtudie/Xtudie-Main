@@ -30,8 +30,9 @@ header {
     padding: .5rem 6% !important;
     font-size: 18px;
     background-color: #fcfbfd;
+    position: fixed;
 }
-.navs {
+.navs{
     padding: 4px;
 }
 .navs ul {
