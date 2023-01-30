@@ -30,6 +30,10 @@ header {
     padding: .5rem 6% !important;
     font-size: 18px;
     background-color: #fcfbfd;
+    position: fixed !important;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
 }
 nav{
     padding: 0!important;
@@ -87,7 +91,7 @@ nav{
 }
 #above-fold {
     display: flex;
-    padding: 0 6%;
+    padding: 2% 6%;
     height: 100vh;
 }
 .intro {
@@ -269,12 +273,13 @@ btn:focus, a:focus
     .navbar-brand{
         margin: auto;
         flex: 0;
-        width: 110px !important;
+        width: 100px!important;
     }.navbar-toggler{
         padding: 0;
     }
     #above-fold{
-        height: 90vh;
+        height: 100vh;
+        padding-top: 4rem;
     }
     .intro {
         width: 100%;
