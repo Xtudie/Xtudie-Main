@@ -22,9 +22,7 @@ animateItem();
 
 let viewBtns = document.querySelectorAll('.view-btn');
 let viewBtnsArry = [...viewBtns];
-let viewBtn = viewBtnsArry.forEach(btn => {
-    btn
-});
+
 materialArry.forEach(material => {
     const priceBtn = material.lastElementChild;
     material.addEventListener('mouseover', () => {
@@ -37,4 +35,18 @@ materialArry.forEach(material => {
         priceBtn.style.color = '#6255a5';
         priceBtn.style.borderColor = '#6255a5'
     })
+});
+
+const navbarToggler = document.getElementById('navbar-toggler');
+
+let clickCount = 0;
+navbarToggler.addEventListener('click', () => {
+    navbarToggler.firstElementChild.classList.remove('fa-bars');
+    navbarToggler.firstElementChild.classList.add('fa-xmark');
+    clickCount ++;
+    if (clickCount >= 2) {
+        navbarToggler.firstElementChild.classList.remove('fa-xmark');
+        navbarToggler.firstElementChild.classList.add('fa-bars');
+        clickCount = 0;
+    }
 });
